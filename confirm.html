@@ -1,0 +1,36 @@
+<div class="back">
+	<center><img ng-src="images/{{info.allProducts[which].image_path}}" width="500px" height="150px"></center>
+</div>
+<div class="confirm">
+	<center><h3>Confirmation</h3></center>
+
+		<center><h4>Product Description</h4></center>
+		<p>{{info.allProducts[which].product_description}}</p>
+		<center><h4>Shipping Details</h4></center>
+			<center><p>{{fname}} {{lname}}</p> </center>
+			<center><p>{{address}}, {{city}} - {{zip}}</p> </center>
+		<center><h4>Final Price</h4></center>
+
+		<div class="row">
+		
+		<div class="col-md-6">
+			<center><h5>Order value:</h5> </center>
+			<center><h5>Shipping and Handeling:</h5> </center>
+			<hr>
+			<center><h5>Order Total:</h5> </center>
+			
+		</div>
+		<div class="col-md-4">
+			<center><h5>${{info.allProducts[which].price}}</h5> </center>
+			<center><h5>$20</h5> </center>
+			<hr>
+			<center><h5>${{info.allProducts[which].price + 20}}</h5> </center>
+					
+		</div>
+		</div>
+
+		<br>
+		<center><button ng-click="home()" class="btn btn-default">Go to Home</button></center>
+		<br>
+		<br>
+</div>

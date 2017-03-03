@@ -1,0 +1,84 @@
+<div class="row">
+	<div class="col-md-6">
+		<div class="back1">
+			<center><img ng-src="images/{{info.allProducts[which].image_path}}" width="500px" height="150px"/><p style="color: #fff; font-size: 20px;">Price: ${{info.allProducts[which].price}}</p></center>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="description">
+			<p>{{info.allProducts[which].product_description}}</p>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="custinfo" ng-hide="customer">
+		<div class="row">
+		<center><h3>Customer Details</h3></center>
+		<div class="col-md-4">
+			<center><h4>First Name:</h4> </center>
+			<center><h4>Last Name:</h4> </center>
+			<center><h4>Email:</h4> </center>
+			<center><h4>Credit Card:</h4> </center>
+			<center><h4>Address:</h4> </center>
+			<center><h4>City:</h4> </center>
+			<center><h4>Zipcode:</h4> </center>
+			<center><h4>Phone no:</h4> </center>
+
+			
+
+		</div>
+		<div class="col-md-4">
+			<input type="text" class="form-control" ng-model="fname" placeholder= "Enter your Firstname" name="fname" required>
+			
+			<input type="text" class="form-control" ng-model="lname" placeholder= "Enter your Lastname" name="lname" required>
+			
+			<input type="text" class="form-control" ng-model="email" placeholder= "Enter your Email" name="email">
+			<input type="number" class="form-control" ng-model="cc" placeholder= "Enter Credit Card info" name="cc">
+			<input type="text" class="form-control" ng-model="address" placeholder= "Enter your Address" name="address">
+			<input type="text" class="form-control" ng-model="city" placeholder= "Enter your City" name="city">
+			<input type="text" class="form-control" ng-model="zip" placeholder= "Enter your Zipcode" name="zip">
+			<input type="text" class="form-control" ng-model="phone" placeholder= "(XXX) XXX-XXXX" name="phone">
+		</div>
+		</div>
+		 <br>
+		<center><button ng-click="review()" class="btn btn-default">Review Order</button></center>
+			<br>
+	</div>
+
+	<div class="review" ng-hide="review1">
+		<div class="row">
+		<center><h3>Review Order</h3></center>
+		<div class="col-md-6">
+			<center><h4>First Name:</h4> </center>
+			<center><h4>Last Name:</h4> </center>
+			<center><h4>Email:</h4> </center>
+			<center><h4>Credit Card:</h4> </center>
+			<center><h4>Address:</h4> </center>
+			<center><h4>City:</h4> </center>
+			<center><h4>Zipcode:</h4> </center>
+			<center><h4>Phone no:</h4> </center>
+
+			
+
+		</div>
+		<div class="col-md-4">
+			<center><h4>{{fname}}</h4> </center>
+			<center><h4>{{lname}}</h4> </center>
+			<center><h4>{{email}}</h4> </center>
+			<center><h4>{{cc}}</h4> </center>
+			<center><h4>{{address}}</h4> </center>
+			<center><h4>{{city}}</h4> </center>
+			<center><h4>{{zip}}</h4> </center>
+			<center><h4>{{phone}}</h4> </center>
+			
+		</div>
+		</div>
+		<br>
+		<center><button ng-click="edit()" class="btn btn-default">Edit Info</button> <button ng-click="buy()" class="btn btn-default">Buy</button></center>
+		<br>
+		<br>
+	</div>
+
+
+	
+</div>

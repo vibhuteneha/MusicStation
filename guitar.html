@@ -1,0 +1,21 @@
+<div class="back">
+	<center><img ng-src="images/{{info.allProducts[which].image_path}}" width="500px" height="150px"/><p style="color: #fff; font-size: 20px;">Price: ${{info.allProducts[which].price}}</p></center>
+</div>
+<div>
+<button ng-click="prev()" ng-disabled="pdis" class="btn btn-default">Previous</button>
+<button ng-click="next()" class="pull-right btn btn-default" ng-disabled="ndis" >Next</button>
+</div>
+<div class="info">
+	<a href= ""> <h3><span> + </span> Product Description</h3></a>
+	<p>{{info.allProducts[which].product_description}}</p>
+</div>
+<div class="info">
+	<a href= ""> <h3><span> + </span>Shipping Info</h3></a>
+	<p>{{info.allProducts[which].shipping_details}}</p>
+</div>
+<div class="info">
+	<a href= ""> <h3><span> + </span>Customer Review</h3></a>
+	<p>{{info.allProducts[which].customer_reviews}}</p>
+</div>
+
+<button class="pull-right btn btn-default" ng-click="submit()">Buy</button>

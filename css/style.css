@@ -1,0 +1,190 @@
+body{
+    font-family: 'Arima Madurai', cursive;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background.jpg');
+}
+
+.navbar-header{
+    font-weight: bold;
+    font-size: 20px;
+}
+nav ul{
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    
+}
+
+nav ul li{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:hover
+{
+    background: #3d3d3d;
+
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #222222;
+    padding: 0;
+}
+nav ul ul a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul ul li{
+    float: none;
+    width: 200px;
+}
+
+nav ul ul a{
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+
+div.back{
+    width: 550px;
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/woods.jpg');
+    overflow: hidden;
+    background-position: center;
+    padding: 20px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 250px;
+    left: 0;
+    border-radius: 15px;
+}
+.info{
+    width: 700px;
+    height: auto;
+    margin: auto;
+    right: 0;
+    left: 0;
+    color: white;
+    padding:0 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 15px;
+}
+.info p {
+    display: none;
+    font-size: 18px;
+}
+
+div.back1{
+    float: left;
+    display: inline;
+    width: 550px;
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 15px;
+    overflow: hidden;
+    
+    padding: 20px;
+}
+
+div.description{
+    width: auto;
+    height: auto;
+    position: relative;
+    color: white;
+    padding:0 10px;
+    font-size: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 15px;
+}
+.custinfo{
+
+    width: 700px;
+    position: relative;
+    height: auto;
+    margin: 20px 200px;
+    color: white;
+    padding:10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 15px;
+
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Arima Madurai', cursive;
+    padding: 10px;
+}
+input{
+    margin: 15px;
+}
+
+.review{
+
+    width: 700px;
+    position: relative;
+    height: auto;
+    margin: 20px 200px;
+    top:10px;
+    right: 0;
+    left: 0;
+    color: white;
+    padding:0 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 15px;
+
+}
+.info a{
+    text-decoration: none;
+    color: white;
+}
+
+.confirm{
+    width: 700px;
+    height: auto;
+    margin: auto;
+    right: 0;
+    left: 0;
+    color: white;
+    padding:0 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 15px;
+}
+.confirm p {
+    padding: 10px;
+    font-size: 15px;
+}
+.btn{
+    padding: 10px;
+    font-size: 18px;
+}
+.btn:hover {
+    background-color: #339900;
+    color: white;
+}
+.help-block{
+	color: red;
+	font-size: 15px;
+	padding: 10px;
+}
